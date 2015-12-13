@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="dGB-L9-Ccl">
             <objects>
-                <tableViewController storyboardIdentifier="WBTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h3l-kW-Im5" customClass="WBTableViewController" customModule="AnimateHub" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="WBTableView" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h3l-kW-Im5" customClass="WBTableViewController" customModule="AnimateHub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Njo-Ve-2Th">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,16 +31,18 @@
                             <outlet property="delegate" destination="h3l-kW-Im5" id="J4K-hZ-Lj8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="xF7-Nv-BG8"/>
+                    <navigationItem key="navigationItem" title="Home" id="xF7-Nv-BG8">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="LAE-a9-OSW"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWq-ov-tze" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="237" y="221"/>
         </scene>
-        <!--Logon View Controller-->
+        <!--Logon-->
         <scene sceneID="QXq-TW-M8h">
             <objects>
-                <viewController id="oRt-0Z-XOc" customClass="WBLogonViewController" customModule="AnimateHub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Logon" id="oRt-0Z-XOc" customClass="WBLogonViewController" customModule="AnimateHub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qTV-Dn-AOJ"/>
                         <viewControllerLayoutGuide type="bottom" id="jdd-DN-M2v"/>
@@ -68,11 +70,21 @@
                                 <rect key="frame" x="47" y="246" width="150" height="150"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AnimateHub" translatesAutoresizingMaskIntoConstraints="NO" id="f4E-qE-9xJ">
-                                <rect key="frame" x="54" y="195" width="266" height="36"/>
+                                <rect key="frame" x="54" y="187" width="266" height="36"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="ssO-Ix-IyT">
-                                <rect key="frame" x="111" y="181" width="12" height="12"/>
+                                <rect key="frame" x="111" y="173" width="12" height="12"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="Field" disabledBackground="DisabledField" translatesAutoresizingMaskIntoConstraints="NO" id="WRn-EW-XKC">
+                                <rect key="frame" x="27" y="322" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usernmae" textAlignment="natural" minimumFontSize="17" background="Field" disabledBackground="DisabledField" translatesAutoresizingMaskIntoConstraints="NO" id="OsZ-VO-OlQ">
+                                <rect key="frame" x="27" y="255" width="320" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -89,16 +101,18 @@
                         <outlet property="bubble5" destination="Wma-sL-LMc" id="2cg-a0-9LI"/>
                         <outlet property="dot" destination="ssO-Ix-IyT" id="oZ1-zG-bWO"/>
                         <outlet property="logo" destination="f4E-qE-9xJ" id="Fzf-vs-8aZ"/>
+                        <outlet property="password" destination="WRn-EW-XKC" id="ae0-5Q-FfJ"/>
+                        <outlet property="username" destination="OsZ-VO-OlQ" id="5Kp-AX-uUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLW-Hm-TaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897" y="221"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation-->
         <scene sceneID="ZoP-rs-giP">
             <objects>
-                <navigationController id="C1Y-Sy-knp" sceneMemberID="viewController">
+                <navigationController title="Navigation" id="C1Y-Sy-knp" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iqu-P2-fSn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -119,6 +133,8 @@
         <image name="Bubble3" width="181" height="184"/>
         <image name="Bubble4" width="150" height="150"/>
         <image name="Bubble5" width="150" height="150"/>
+        <image name="DisabledField" width="322" height="42"/>
+        <image name="Field" width="319" height="41"/>
         <image name="backgroud" width="375" height="667"/>
         <image name="dot" width="11" height="10"/>
     </resources>
