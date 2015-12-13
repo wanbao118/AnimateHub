@@ -85,6 +85,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U83-xw-chM">
+                                <rect key="frame" x="27" y="394" width="321" height="52"/>
+                                <state key="normal" title="Log In" backgroundImage="Close Background">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="oRt-0Z-XOc" eventType="touchUpInside" id="I5K-t4-irE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,6 +109,7 @@
                         <outlet property="bubble4" destination="6BH-2Z-FRb" id="CYW-1c-zBG"/>
                         <outlet property="bubble5" destination="Wma-sL-LMc" id="2cg-a0-9LI"/>
                         <outlet property="dot" destination="ssO-Ix-IyT" id="oZ1-zG-bWO"/>
+                        <outlet property="login" destination="U83-xw-chM" id="vzn-Rg-AuB"/>
                         <outlet property="logo" destination="f4E-qE-9xJ" id="Fzf-vs-8aZ"/>
                         <outlet property="password" destination="WRn-EW-XKC" id="ae0-5Q-FfJ"/>
                         <outlet property="username" destination="OsZ-VO-OlQ" id="5Kp-AX-uUZ"/>
@@ -133,8 +143,9 @@
         <image name="Bubble3" width="181" height="184"/>
         <image name="Bubble4" width="150" height="150"/>
         <image name="Bubble5" width="150" height="150"/>
-        <image name="DisabledField" width="322" height="42"/>
-        <image name="Field" width="319" height="41"/>
+        <image name="Close Background" width="321" height="52"/>
+        <image name="DisabledField" width="13" height="42"/>
+        <image name="Field" width="11" height="41"/>
         <image name="backgroud" width="375" height="667"/>
         <image name="dot" width="11" height="10"/>
     </resources>

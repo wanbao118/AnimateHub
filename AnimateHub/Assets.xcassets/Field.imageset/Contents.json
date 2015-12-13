@@ -1,16 +1,58 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 20,
+          "top" : 20,
+          "right" : 5,
+          "left" : 5
+        }
+      },
       "idiom" : "universal",
       "filename" : "Field.png",
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 41,
+          "top" : 40,
+          "right" : 10,
+          "left" : 10
+        }
+      },
       "idiom" : "universal",
       "filename" : "Field@2x.png",
       "scale" : "2x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 61,
+          "top" : 61,
+          "right" : 15,
+          "left" : 15
+        }
+      },
       "idiom" : "universal",
       "filename" : "Field@3x.png",
       "scale" : "3x"

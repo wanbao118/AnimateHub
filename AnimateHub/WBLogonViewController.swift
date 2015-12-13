@@ -19,6 +19,11 @@ class WBLogonViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var login: UIButton!
+    
+    //custom
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .White)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +56,9 @@ class WBLogonViewController: UIViewController {
         self.password.addSubview(keyImageView)
         //self.password.center.x -= self.view.bounds.width //Not effective
         self.password.alpha = 0
+        
+        self.login.alpha=0
+        
         // Do any additional setup after loading the view.
     }
 
@@ -86,13 +94,35 @@ class WBLogonViewController: UIViewController {
             self.dot.center.x += self.view.bounds.width/2
         }, completion: nil)
         
-        UIView.animateWithDuration(0.4, delay: 0.4, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.4, options: .AllowAnimatedContent, animations: {
+        UIView.animateWithDuration(0.4, delay: 0.4, options: .CurveEaseOut, animations: {
             self.username.alpha = 1
             self.username.center.x += self.view.bounds.width
+        }, completion: nil)
+        
+        UIView.animateWithDuration(0.4, delay: 0.5, options: .CurveEaseOut, animations: {
             self.password.alpha = 1
             self.password.center.x += self.view.bounds.width
         }, completion: nil)
+
+        UIView.animateWithDuration(0.4, delay: 0.6, options: .CurveEaseOut, animations: {
+            self.login.alpha = 1
+            self.login.center.x += self.view.bounds.width
+        }, completion: nil)
+
     }
+    
+    
+    @IBAction func loginTapped(sender: AnyObject) {
+        self.login.addSubview(self.spinner)
+        self.spinner.frame.origin = CGPointMake(12, 16)
+        self.spinner.startAnimating()
+        self.login.center.x -= 30
+        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .TransitionNone, animations: {
+            self.login.center.x += 30
+        }, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
