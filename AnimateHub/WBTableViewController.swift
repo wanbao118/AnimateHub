@@ -10,6 +10,8 @@ import UIKit
 
 class WBTableViewController: UITableViewController {
 
+    var items = ["login","demo"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,16 +36,27 @@ class WBTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.items.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("WBTableViewCell", forIndexPath: indexPath)
+        let row = indexPath.row as Int
         
-        cell.textLabel?.text = "Logon"
+        let identifierAtIndex:String = "WBTableViewCell" + String(row)
         
+        let cell = tableView.dequeueReusableCellWithIdentifier(identifierAtIndex, forIndexPath: indexPath)
+        
+        
+        
+        cell.textLabel?.text = self.items[row]
+
         return cell
     }
+    
+//    func insertRowsAtIndexPaths(_indexPaths: [NSIndexPath],
+//        withRowAnimation animation: UITableViewRowAnimation){
+//    
+//    }
     
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
