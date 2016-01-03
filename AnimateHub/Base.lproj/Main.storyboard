@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="959" y="-327"/>
         </scene>
-        <!--View Controller-->
+        <!--Demo View Controller-->
         <scene sceneID="2hx-yB-aX9">
             <objects>
-                <viewController id="1xy-eU-zFC" sceneMemberID="viewController">
+                <viewController id="1xy-eU-zFC" customClass="WBDemoViewController" customModule="AnimateHub" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="843-BO-Voy"/>
                         <viewControllerLayoutGuide type="bottom" id="2PI-zc-erz"/>
@@ -215,16 +215,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-J3-qdF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="599" height="536"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" image="backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-st-5z4">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-X6-7yW">
+                                        <rect key="frame" x="0.0" y="0.0" width="599" height="536"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="demoView" destination="Z1g-X6-7yW" id="p32-Ak-jIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnR-Sa-j7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
