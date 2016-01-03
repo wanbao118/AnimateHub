@@ -64,10 +64,10 @@
 				93CA02921C1C6BF90016C09A /* AppDelegate.swift */,
 				93CA02941C1C6BF90016C09A /* ViewController.swift */,
 				93CA02961C1C6BF90016C09A /* Main.storyboard */,
-				93D272841C38F10B00864C6D /* WBDemoViewController.swift */,
 				93CA02991C1C6BF90016C09A /* Assets.xcassets */,
 				93CA029B1C1C6BF90016C09A /* LaunchScreen.storyboard */,
 				93CA029E1C1C6BF90016C09A /* Info.plist */,
+				93D272841C38F10B00864C6D /* WBDemoViewController.swift */,
 				93CA02A41C1C6D8A0016C09A /* WBTableViewController.swift */,
 				93CA02A81C1C7FDB0016C09A /* WBLogonViewController.swift */,
 			);

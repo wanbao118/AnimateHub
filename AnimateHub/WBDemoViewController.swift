@@ -34,12 +34,12 @@ class WBDemoViewController: UIViewController {
         let orient = UIDevice.currentDevice().orientation;
         if UIDeviceOrientationIsPortrait(orient){
             self.demoView.layer.contents = UIImage(named: "backgroud.png")!.CGImage
-            self.view.addSubview(self.demoView)
+            //self.view.addSubview(self.demoView)
         }
         
         if UIDeviceOrientationIsLandscape(orient){
             self.demoView.layer.contents = UIImage(named: "background.png")!.CGImage
-            self.view.addSubview(self.demoView)
+            //self.view.addSubview(self.demoView)
         }
         
     }

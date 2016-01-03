@@ -6,94 +6,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AnimateHub/WBDemoViewController.swift"
-            timestampString = "473499588.908262"
+            filePath = "AnimateHub/WBTableViewController.swift"
+            timestampString = "473513296.993993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "initView()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "tableView(_:commitEditingStyle:forRowAtIndexPath:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AnimateHub/WBDemoViewController.swift"
-            timestampString = "473499092.689734"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "WBDemoViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AnimateHub/WBDemoViewController.swift"
-            timestampString = "473495958.753276"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1"
-            endingLineNumber = "1">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimateHub.WBDemoViewController.__deallocating_deinit"
-                  moduleName = "AnimateHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiangwanbao/Desktop/devTraining/AnimateHub/AnimateHub/WBDemoViewController.swift"
-                  timestampString = "473495958.75826"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimateHub.WBDemoViewController.init (AnimateHub.WBDemoViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; AnimateHub.WBDemoViewController"
-                  moduleName = "AnimateHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiangwanbao/Desktop/devTraining/AnimateHub/AnimateHub/WBDemoViewController.swift"
-                  timestampString = "473495958.758672"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimateHub.WBDemoViewController.init (AnimateHub.WBDemoViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;AnimateHub.WBDemoViewController&gt;"
-                  moduleName = "AnimateHub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiangwanbao/Desktop/devTraining/AnimateHub/AnimateHub/WBDemoViewController.swift"
-                  timestampString = "473495958.759187"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
